@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  width: 100%;
+  background-image: url("../image/hisma-desert-cover.jpg");
+  background-size: cover;
+}
+/* input {
+    margin: 20px;
+  border: 2px solid #ffffff11;
+    border-radius: 25px;
+    background-color: #ffffff11;
+} */

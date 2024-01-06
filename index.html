@@ -1,15 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./style.css">
-	<title>Document</title>
-</head>
-<body>
-	<form action="">
-		<label for="text"></label>
-		<input type="text" id="text">
-	</form>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="conteiner">
+      <div class="bagraund-blur">
+        <div class="content">
+          <form action="">
+            <h1>Contact Form</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab velit
+              facilis laboriosam laborum repellat ratione dicta esse pariatur,
+              molestias neque non autem dolores enim doloribus suscipit quisquam
+              eveniet blanditiis, dolor accusamus beatae itaque quidem quae
+              tempore. A nesciunt placeat vel natus.
+            </p>
+            <div class="forms">
+              <div class="forms-left">
+                <input
+                  tabindex="1"
+                  placeholder="Name"
+                  type="text"
+                  name="name"
+                />
+                <input
+                  tabindex="2"
+                  placeholder="Email"
+                  type="email"
+                  name="email"
+                />
+                <input
+                  tabindex="3"
+                  placeholder="Subject"
+                  type="text"
+                  name="subject"
+                />
+              </div>
+              <div class="forms-right">
+                <textarea
+                  tabindex="4"
+                  placeholder="Your message here..."
+                  name="message"
+                  id=""
+                  cols="55"
+                  rows="12"
+                ></textarea>
+              </div>
+            </div>
+			<button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

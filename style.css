@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  
 }
 body,
 html {
@@ -15,7 +14,6 @@ html {
   background-size: cover;
   position: relative;
   /* filter: blur(3px); */
-  
 }
 .content {
   position: absolute;
@@ -30,17 +28,16 @@ html {
 form {
   display: flex;
   flex-direction: column;
-
 }
 h1 {
-  color:white;
+  color: white;
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 30px;
 }
-p {
+.forms-title {
   color: black;
-  background-color:#d8dfe044;
+  background-color: #d8dfe070;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -49,18 +46,18 @@ p {
 .forms {
   display: flex;
   justify-content: space-between;
+  
 }
-.forms-left  {
+.forms-left {
   min-width: 410px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin-right: 30px;
-  
 }
 input {
   margin-bottom: 20px;
-  background-color: #d8dfe044;
+  background-color: #d8dfe070;
   border: 2px solid #ffffff11;
   padding: 15px;
   border-radius: 10px;
@@ -68,23 +65,41 @@ input {
 input::-webkit-input-placeholder {
   color: black;
 }
-  
+input:focus{
+  box-shadow: 10px 10px 10px #d6181811;
+  outline-style: none;
+  box-shadow: 0 0 20px rgb(66, 10, 10);
+}
 
 input:last-child {
   margin-bottom: 0;
 }
-.forms-right  {
+
+input[type=email]:invalid:focus-visible {
+  border: 4px solid red;
+  margin-bottom: 15px;
+}
+
+input[type=email]:valid:focus-visible{
+  border: none;
+}
+.forms-right {
   min-width: 410px;
 }
 
-textarea  {
-  background-color: #d8dfe044;
+textarea {
+  background-color: #d8dfe070;
   border: 2px solid #ffffff11;
   border-radius: 10px;
+  outline-style: none
 }
 textarea::-webkit-input-placeholder {
   color: black;
   padding: 15px 0 0 15px;
+}
+textarea:focus {
+  background-color: #d8dfe070;
+  box-shadow: 0 0 20px rgb(66, 10, 10);
 }
 button {
   padding: 10px 25px;
